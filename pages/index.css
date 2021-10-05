@@ -143,7 +143,9 @@
 
 .lead {
   background: #ebebeb;
-  background: url(../images/lead_bg.jpg) bottom left;
+  background: url(../images/lead_bg.jpg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   display: flex;
   align-items: flex-start;
@@ -240,51 +242,53 @@
 
 .subscribe__list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  flex-direction: row;
   margin: 50px auto 0;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 55px;
   padding: 0;
-  width: 1310px;
 }
 
 .age {
   border-radius: 100px;
-  height: 520px;
-  width: 400px;
   background-color: #bfbfbf;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  padding-left: 54px;
 }
 
 .age__title {
   font-weight: normal;
   font-size: 48px;
   line-height: 66px;
-  text-align: left;
-  width: 300px;
-  margin: 60px auto 0px;
+  justify-self: flex-start;
+  margin-top: 60px;
+  margin-bottom: 10px;
 }
 
 .age__text {
   font-weight: normal;
   font-size: 24px;
   line-height: 33px;
+  max-width: 300px;
+  margin: 0;
+  margin-bottom: 35px;
   text-align: left;
-  width: 300px;
-  margin: 10px auto 0px;
 }
 
 .age__img-btn {
   display: flex;
-  flex-direction: row;
   margin: auto auto 24px;
+  padding: 0;
 }
 
 .age__image {
-  height: 200px;
-  width: 200px;
+  max-height: 200px;
+  /* width: 200px; */
   margin-top: 18px;
+  margin-right: 24px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -299,22 +303,24 @@
 }
 
 .subscribe__rectangle {
-  width: 1310px;
-  height: 274px;
   background: rgba(139, 178, 189, 0.4);
   border-radius: 100px;
-  margin: 186px auto 0px;
+  margin: 186px 65px 0px 65px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }
 
 .subscribe__rectangle__text {
-  font-weight: normal;
+  padding: 70px 0;
   font-size: 24px;
   line-height: 33px;
-  width: 932px;
+  max-width: 932px;
 }
 
 /*/////////////////////////////////////////*/
@@ -427,8 +433,8 @@
   list-style: none;
 }
 
-.freebie__item:not(:last-child) {
-  margin-right: 91px;
+.freebie__item {
+  min-width: 25%;
 }
 
 .freebie__image {
@@ -506,7 +512,42 @@
   font-weight: normal;
 }
 
+@media screen and (max-width: 1440px) {
+  .subscribe__list {
+    column-gap: 30px;
+    row-gap: 25px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .subscribe__list {
+    column-gap: 30px;
+    row-gap: 25px;
+  }
+  .age {
+    padding-left: 0px;
+    align-items: center;
+  }
+  .age__image {
+    height: 75%;
+    margin-right: 0;
+  }
+
+  .age__img-btn {
+    margin: 0;
+    margin-top: auto;
+  }
+}
+
 @media screen and (max-width: 1024px) {
+  .subscribe__list {
+    column-gap: 20px;
+  }
+
+  .subscribe__rectangle__text {
+    max-width: 700px;
+  }
+
   .nav {
     position: absolute;
     top: 30px;
@@ -566,19 +607,85 @@
   .lead {
     background-position: top right;
   }
+
+  .kits__card-container {
+    flex-wrap: wrap;
+  }
+
+  .kits__card {
+    width: 50%;
+  }
+
+  .freebie__container {
+    margin: 76px 20px 0;
+  }
+
+  /* .freebie__image {
+    width: 90%;
+  } */
 }
 
 @media screen and (max-width: 600px) {
+  .freebie__item {
+    width: 50%;
+  }
+  /* .freebie__image {
+    width: 100%;
+  } */
+
+  .subscribe__rectangle {
+    margin: 100px 20px;
+  }
+
+  .subscribe__rectangle__text {
+    padding: 0;
+    max-width: 400px;
+  }
+
   .lead {
     align-items: center;
     justify-content: center;
+    height: 70vh;
   }
   .lead__container {
     margin: 0;
   }
+
+  .age {
+    width: 80%;
+    align-items: left;
+  }
+  .age__image {
+    margin-right: 0;
+  }
+
+  .age__img-btn {
+    column-gap: 30px;
+    justify-content: space-between;
+  }
+
+  .kits__card {
+    width: 100%;
+  }
+
+  .button_pink {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 425px) {
+  .freebie__item {
+    width: 100%;
+  }
+  .freebie__image {
+    width: 80%;
+  }
+
+  .subscribe__rectangle__text {
+    padding: 0;
+    max-width: 320px;
+  }
+
   .logo {
     height: 50px;
   }
@@ -593,5 +700,8 @@
 
   .button {
     width: 100%;
+  }
+  .button_pink {
+    width: 75%;
   }
 }
