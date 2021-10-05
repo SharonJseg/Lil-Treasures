@@ -216,7 +216,6 @@
   margin: 0 auto;
   max-width: 600px;
 }
-/*/////////////////////////////////////////*/
 
 .subscribe {
   text-align: center;
@@ -322,8 +321,6 @@
   line-height: 33px;
   max-width: 932px;
 }
-
-/*/////////////////////////////////////////*/
 
 .kits {
   text-align: center;
@@ -619,19 +616,12 @@
   .freebie__container {
     margin: 76px 20px 0;
   }
-
-  /* .freebie__image {
-    width: 90%;
-  } */
 }
 
 @media screen and (max-width: 600px) {
   .freebie__item {
     width: 50%;
   }
-  /* .freebie__image {
-    width: 100%;
-  } */
 
   .subscribe__rectangle {
     margin: 100px 20px;
