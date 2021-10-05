@@ -47,43 +47,55 @@
 
             <section class="subscribe" id="subscribe">
                 <h2 class="section__title">Choose the age group</h2>
-                <p class="section__subtitle">We selected best age appropriate activities for your kid’s development
+                <p class="section__subtitle">
+                    We selected best age appropriate activities for your kid’s
+                    development
                 </p>
                 <ul class="subscribe__list">
                     <li class="age">
                         <h2 class="age__title">3-5 years</h2>
-                        <p class="age__text">A collection of activities and ideas to promote learning and development.
+                        <p class="age__text">
+                            A collection of activities and ideas to promote learning and
+                            development.
                         </p>
                         <div class="age__img-btn">
                             <button class="button button_age">Check it</button>
-                            <img class="age__image" src="../images/age_3_5.jpg" alt="Image of a toddler playing">
+                            <img class="age__image" src="../images/age_3_5.jpg" alt="Image of a toddler playing" />
                         </div>
                     </li>
                     <li class="age">
                         <h2 class="age__title">6-9 years</h2>
-                        <p class="age__text">Learning Activities for grasping new things.</p>
+                        <p class="age__text">
+                            Learning Activities for grasping new things.
+                        </p>
                         <div class="age__img-btn">
                             <button class="button button_age">Check it</button>
-                            <img class=" age__image" src="../images/age_6_9.jpg"
-                                alt="Image of a child doing a scientific experiment">
+                            <img class="age__image" src="../images/age_6_9.jpg"
+                                alt="Image of a child doing a scientific experiment" />
                         </div>
                     </li>
                     <li class="age">
                         <h2 class="age__title">10-12 years</h2>
-                        <p class="age__text">Awesome Projects for Tween kids. Practicing skills in order to become
-                            better.</p>
+                        <p class="age__text">
+                            Awesome Projects for Tween kids. Practicing skills in order to
+                            become better.
+                        </p>
                         <div class="age__img-btn">
                             <button class="button button_age">Check it</button>
-                            <img class="age__image" src="../images/age_10_12.jpg" alt="Image of hands building a robot">
+                            <img class="age__image" src="../images/age_10_12.jpg"
+                                alt="Image of hands building a robot" />
                         </div>
                     </li>
                 </ul>
                 <div class="subscribe__rectangle">
-                    <p class="subscribe__rectangle__text">Even if you are not professional we could help you to
-                        introduce games or
-                        activities that would impart cognitive or emotional skills of your child. Here are some
-                        activities that you can try. It can give your child exposure to craft. It is a creative way to
-                        help your kid give colours to his fantasies. They may make a mess, but they will learn more.</p>
+                    <p class="subscribe__rectangle__text">
+                        Even if you are not professional we could help you to introduce
+                        games or activities that would impart cognitive or emotional
+                        skills of your child. Here are some activities that you can try.
+                        It can give your child exposure to craft. It is a creative way to
+                        help your kid give colours to his fantasies. They may make a mess,
+                        but they will learn more.
+                    </p>
                 </div>
             </section>
 
@@ -238,40 +250,82 @@
                 </ul>
             </section>
             <section class="freebies" id="freebies">
-                <h2 class="section__title">We do care about kids
-                    but we also care about parents </h2>
-                <p class="section__subtitle">Get FREE printable tasks and enjoy quiet moments!</p>
+                <h2 class="section__title">
+                    We do care about kids but we also care about parents
+                </h2>
+                <p class="section__subtitle">
+                    Get FREE printable tasks and enjoy quiet moments!
+                </p>
                 <div class="freebie__container">
                     <ul class="freebie__list">
                         <li class="freebie__item">
-                            <img src="../images/coloring.jpg" alt="drawing of a ladybug" class="freebie__image">
+                            <img src="../images/coloring.jpg" alt="drawing of a ladybug" class="freebie__image"
+                                onclick="printJS('../freebies/ladybug.pdf')" />
                             <p class="freebie__caption">Coloring</p>
                         </li>
                         <li class="freebie__item">
                             <img src="../images/origami.jpg" alt="drawing of origami instructions"
-                                class="freebie__image">
+                                class="freebie__image" onclick="printJS('../freebies/ladybug.pdf')" />
                             <p class="freebie__caption">Origami</p>
                         </li>
                         <li class="freebie__item">
-                            <img src="../images/writing.jpg" alt="image of a written page" class="freebie__image">
+                            <img src="../images/writing.jpg" alt="image of a written page" class="freebie__image"
+                                onclick="printJS('../freebies/ladybug.pdf')" />
                             <p class="freebie__caption">Writing</p>
                         </li>
                         <li class="freebie__item">
                             <img src="../images/maze.jpg" alt="drawing of a maze in the shape of a snail"
-                                class="freebie__image">
+                                class="freebie__image" onclick="printJS('../freebies/ladybug.pdf')" />
                             <p class="freebie__caption">Maze</p>
                         </li>
-
-
                     </ul>
                 </div>
             </section>
-            <!-- <section class="free-downloads" id="free-downloads"></section>
-            <section class="about-us" id="about-us"></section> -->
-        </main>
-    </div>
 
-    <script src="./index.js"></script>
+        </main>
+        <footer class="footer">
+            <div class="footer__columns">
+                <div class="footer__column">
+                    <img class="logo logo_footer" src="../images/logo.png" alt="logo">
+                    <ul class="footer__list">
+                        <li>
+                            <p class="footer__text">We help parents to rest</p>
+                        </li>
+                        <li>
+                            <p class="footer__text">We make kids never bored at home</p>
+                        </li>
+                        <li>
+                            <p class="footer__text">We help to avoid screen time</p>
+                        </li>
+                    </ul>
+                    <h2 class="footer__column-heading">contacts</h2>
+                    <a class="footer__column-link" href="#">www.liltreasures.com</a>
+                </div>
+                <nav class="footer__column">
+                    <h2 class="footer__column-heading">Email us</h2>
+                    <a class="footer__column-link" href="#">liltreasures@gmail.com</a>
+                </nav>
+                <nav class="footer__column">
+                    <h2 class="footer__column-heading">Follow us</h2>
+                    <ul class="footer__list">
+                        <li>
+                            <a class="footer__column-link" href="#">
+                                <img class="footer__social-icons" src="../images/fb.svg" alt="facebook icon">facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__column-link" href="#">
+                                <img class="footer__social-icons" src="../images/instagram.svg"
+                                    alt="instagram icon">instagram
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+    <script src="./index.js" type="module"></script>
 </body>
 
 </html>
