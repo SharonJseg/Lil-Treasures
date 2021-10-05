@@ -1,0 +1,17 @@
+.kits__card {
+  width: 25%;
+  padding-top: 50px;
+  padding-bottom: 36px;
+}
+
+@media screen and (max-width: 1024px) {
+  .kits__card {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .kits__card {
+    width: 100%;
+  }
+}

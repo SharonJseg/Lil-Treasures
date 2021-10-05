@@ -1,0 +1,25 @@
+.lead {
+  background: #ebebeb;
+  background: url(../../images/lead_bg.jpg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  .lead {
+    background-position: top right;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .lead {
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+  }
+}

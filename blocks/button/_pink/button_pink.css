@@ -1,0 +1,20 @@
+.button_pink {
+  background: #e87c8e;
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.button_pink:hover {
+  color: #be6473;
+}
+
+@media screen and (max-width: 600px) {
+  .button_pink {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .button_pink {
+    width: 75%;
+  }
+}

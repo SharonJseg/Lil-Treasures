@@ -1,0 +1,24 @@
+.subscribe__rectangle-text {
+  padding: 70px 0;
+  font-size: 24px;
+  line-height: 33px;
+  max-width: 932px;
+}
+
+@media screen and (max-width: 1024px) {
+  .subscribe__rectangle-text {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .subscribe__rectangle-text {
+    padding: 0;
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .subscribe__rectangle-text {
+    max-width: 320px;
+  }
+}

@@ -1,0 +1,16 @@
+.lead__container {
+  margin-top: 219px;
+  margin-right: 65px;
+}
+
+@media screen and (max-width: 600px) {
+  .lead__container {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .lead__container {
+    margin: 0 20px;
+  }
+}
