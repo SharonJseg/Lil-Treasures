@@ -13,20 +13,27 @@
 .page__container {
   max-width: 1440px;
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .header {
   max-width: 100%;
-  height: 80px;
+  height: 65px;
   display: flex;
   justify-content: space-between;
-  margin: 20px 20px 0;
+  margin-top: 28px;
   margin-bottom: -100px;
+}
+
+.logo {
+  display: block;
+  margin-left: 16px;
 }
 
 .nav {
   position: relative;
+  margin-top: 8px;
+  margin-right: 65px;
 }
 
 .nav__container {
@@ -34,6 +41,7 @@
   display: flex;
   padding: 0;
   margin: 0;
+  line-height: 1.3;
 }
 
 .nav__mobile-button {
@@ -85,13 +93,21 @@
   color: black;
   padding: 5px;
   display: block;
+  font-size: 24px;
+  line-height: 1.3;
+  border-bottom: 3px dashed transparent;
 }
 
 .nav__link:hover {
-  opacity: 0.6;
+  border-bottom: 3px dashed #40a6a9;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
   .nav {
     position: absolute;
     top: 10px;
@@ -142,8 +158,61 @@
 }
 
 .lead {
-  background-color: coral;
+  background: #ebebeb;
+  background: url(../images/lead_bg.jpg) bottom left;
   height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.lead__content {
+  margin: 219px;
+  margin-right: 65px;
+}
+
+.lead__title {
+  max-width: 421px;
+  font-size: 48px;
+  line-height: 1.35;
+  font-weight: 400;
+  margin: 0;
+}
+
+.lead__subtitle {
+  max-width: 421px;
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 400;
+  margin: 57px 0 16px;
+}
+
+.button {
+  cursor: pointer;
+  background: #40a6a9;
+  color: #fff;
+  width: 222px;
+  height: 54px;
+  border: none;
+  font-size: 18px;
+  line-height: 1.3;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.button:hover {
+  transition: all 0.2s ease-in-out;
+  color: #1c5d5f;
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
 }
 
 .subscription-kits {
@@ -162,6 +231,6 @@
 }
 
 .about-us {
-  background-color: chartreuse;
+  background-color: aquamarine;
   height: 100vh;
 }
