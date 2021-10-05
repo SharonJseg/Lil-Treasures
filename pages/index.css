@@ -61,10 +61,15 @@
 
 .nav__icon {
   width: 30px;
-  height: 2px;
-  background: #333;
+  height: 5px;
+  background: #e87c8e;
   display: inline-block;
   position: relative;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .nav__icon::before {
@@ -73,9 +78,10 @@
   left: 0;
   top: -8px;
   width: 30px;
-  height: 2px;
-  background: #333;
+  height: 5px;
+  background: #e87c8e;
   display: inline-block;
+  border-radius: 20px;
 }
 
 .nav__icon::after {
@@ -84,9 +90,10 @@
   left: 0;
   top: 8px;
   width: 30px;
-  height: 2px;
-  background: #333;
+  height: 5px;
+  background: #e87c8e;
   display: inline-block;
+  border-radius: 20px;
 }
 
 .nav__item {
@@ -134,56 +141,6 @@
   -o-transition: all 0.2s ease-in-out;
 }
 
-@media screen and (max-width: 1024px) {
-  .nav {
-    position: absolute;
-    top: 10px;
-    right: 0;
-    height: 50vh;
-    max-width: 100%;
-    width: 350px;
-    overflow: hidden;
-  }
-
-  .nav__mobile-button {
-    display: inline-block;
-    cursor: pointer;
-    right: 20px;
-  }
-
-  .nav__container {
-    background-color: #ccc;
-    display: flex;
-    opacity: 0;
-    visibility: hidden;
-    width: 75%;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    right: -250px;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-  }
-  .nav__item {
-    margin: 0;
-    padding: 10px;
-  }
-
-  .nav_opened {
-    right: 0;
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-  }
-}
-
 .lead {
   background: #ebebeb;
   background: url(../images/lead_bg.jpg) bottom left;
@@ -195,7 +152,7 @@
 }
 
 .lead__container {
-  margin: 219px;
+  margin-top: 219px;
   margin-right: 65px;
 }
 
@@ -444,16 +401,6 @@
   color: #be6473;
 }
 
-.free-downloads {
-  background-color: chartreuse;
-  height: 100vh;
-}
-
-.about-us {
-  background-color: aquamarine;
-  height: 100vh;
-}
-
 .freebies {
   text-align: center;
   margin-bottom: 100px;
@@ -557,4 +504,94 @@
   height: 16px;
   margin-right: 10px;
   font-weight: normal;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    height: 50vh;
+    max-width: 100%;
+    width: 350px;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .nav__mobile-button {
+    display: inline-block;
+    cursor: pointer;
+    right: 20px;
+  }
+
+  .nav__container {
+    background-color: #fff;
+    border-radius: 50px 0 0 50px;
+    padding: 20px;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    width: 75%;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: -250px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 50px 0 0 50px;
+    -moz-border-radius: 50px 0 0 50px;
+    -ms-border-radius: 50px 0 0 50px;
+    -o-border-radius: 50px 0 0 50px;
+  }
+  .nav__item {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .nav_opened {
+    right: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+  }
+
+  .lead {
+    background-position: top right;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .lead {
+    align-items: center;
+    justify-content: center;
+  }
+  .lead__container {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .logo {
+    height: 50px;
+  }
+
+  .lead__container {
+    margin: 0 20px;
+  }
+
+  .lead__subtitle {
+    margin-top: 10px;
+  }
+
+  .button {
+    width: 100%;
+  }
 }
