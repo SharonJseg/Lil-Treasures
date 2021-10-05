@@ -3,6 +3,7 @@ const navContainer = document.querySelector('.nav__container');
 const printImage = document.querySelector('.freebie__image');
 
 const navItems = [...document.querySelectorAll('.nav__item')];
+const kitsCardImages = [...document.querySelectorAll('.kits__card-image')];
 
 const toggleNav = () => {
   if (!navContainer.classList.contains('nav_opened')) {
@@ -25,3 +26,19 @@ navItems.forEach((navItem) => {
 printImage.addEventListener('click', () => {
   console.log('test');
 });
+
+const addAnimation = (evt) => {
+  evt.target.classList.add('playful');
+};
+
+const removeAnimation = (evt) => {
+  evt.target.classList.remove('playful');
+};
+
+kitsCardImages.forEach((image) =>
+  image.addEventListener('mouseover', addAnimation)
+);
+
+kitsCardImages.forEach((image) =>
+  image.addEventListener('mouseout', removeAnimation)
+);
