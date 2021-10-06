@@ -46,7 +46,6 @@ const freebie = new Section(
       const freebieInstance = new Freebie(data, '#freebie-template');
       const freebieElement = freebieInstance.generateFreebie();
       freebie.setItem(freebieElement);
-      console.log(freebieElement);
     },
   },
   '.freebie__list'

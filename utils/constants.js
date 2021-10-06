@@ -72,7 +72,8 @@ export const freebieArray = [
       alt: 'drawing of a ladybug',
     },
     caption: 'Coloring',
-    filepath: 'https://sharonjseg.github.io/Lil-Treasures/freebies/ladybug.pdf',
+    filepath: '../freebies/ladybug.pdf',
+    // filepath: 'https://sharonjseg.github.io/Lil-Treasures/freebies/ladybug.pdf',
   },
   {
     image: {

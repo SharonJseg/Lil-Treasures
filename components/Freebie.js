@@ -21,9 +21,12 @@ export default class Freebie {
     this._element.querySelector('.freebie__image').alt = this._imageAlt;
     this._element.querySelector('.freebie__caption').textContent =
       this._caption;
-    this._element.addEventListener('click', () => {
-      printJS(this._filePath);
-    });
+    this._element.querySelector('.freebie__download').href = this._filePath;
+    // this._element.addEventListener('click', () => {
+    //   this._element.setAttribute('download', this._filePath);
+    //   console.log('click');
+    //   //   printJS(this._filePath);
+    // });
     return this._element;
   }
 }
