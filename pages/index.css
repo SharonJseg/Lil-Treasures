@@ -62,6 +62,22 @@
 @import url(../blocks/footer/__column-link/footer__column-link.css);
 @import url(../blocks/footer/__social-icons/footer__social-icons.css);
 
+.lead__image {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  max-height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
 .popup {
   width: 100%;
   height: 100%;
@@ -216,6 +232,14 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .lead__image {
+    position: absolute;
+    top: 20%;
+    left: -25%;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .popup__form {
     width: 280px;
@@ -224,5 +248,8 @@
   .form__button {
     width: 50%;
     margin-left: 35px;
+  }
+
+  .lead__image {
   }
 }
