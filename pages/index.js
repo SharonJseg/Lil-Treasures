@@ -1,4 +1,4 @@
-import { kitCardArray } from '../utils/constants.js';
+import { kitCardArray, printfile } from '../utils/constants.js';
 import Section from '../components/Section.js';
 import KitCard from '../components/KitCard.js';
 
@@ -7,6 +7,13 @@ const navContainer = document.querySelector('.nav__container');
 
 const navItems = [...document.querySelectorAll('.nav__item')];
 const kitsCardImages = [...document.querySelectorAll('.kits__card-image')];
+
+const testing = document.querySelector('.test');
+console.log(testing);
+testing.addEventListener('click', () => {
+  console.log('click');
+  printJS(printfile);
+});
 
 const toggleNav = () => {
   if (!navContainer.classList.contains('nav_opened')) {
