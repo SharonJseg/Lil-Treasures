@@ -66,4 +66,4 @@ export const kitCardArray = [
 ];
 
 export const printfile =
-  'https://code.s3.yandex.net/web-developer/project-1/sprint-1-en-brief.pdf';
+  'https://sharonjseg.github.io/Lil-Treasures/freebies/ladybug.pdf';
