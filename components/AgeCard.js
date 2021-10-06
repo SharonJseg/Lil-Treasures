@@ -21,7 +21,6 @@ export default class AgeCard {
     this._element.querySelector('.age__text').textContent = this._text;
     this._element.querySelector('.age__image').src = this._imageSrc;
     this._element.querySelector('.age__image').alt = this._imageAlt;
-    console.log(this._element);
     return this._element;
   }
 }

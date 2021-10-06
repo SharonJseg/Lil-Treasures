@@ -2,16 +2,18 @@ import {
   freebieArray,
   kitCardArray,
   ageCardArray,
+  navItemArray,
 } from '../utils/constants.js';
 import Section from '../components/Section.js';
 import AgeCard from '../components/AgeCard.js';
 import KitCard from '../components/KitCard.js';
 import Freebie from '../components/Freebie.js';
+import NavItem from '../components/NavItem.js';
 
 const hamburgerButton = document.querySelector('.nav__mobile-button');
 const navContainer = document.querySelector('.nav__container');
 
-const navItems = [...document.querySelectorAll('.nav__item')];
+// const navItems = [...document.querySelectorAll('.nav__item')];
 
 const toggleNav = () => {
   if (!navContainer.classList.contains('nav_opened')) {
@@ -21,14 +23,28 @@ const toggleNav = () => {
   }
 };
 
-const closeNav = () => {
-  navContainer.classList.remove('nav_opened');
-};
+// const closeNav = () => {
+//   navContainer.classList.remove('nav_opened');
+// };
 
 hamburgerButton.addEventListener('click', toggleNav);
-navItems.forEach((navItem) => {
-  navItem.addEventListener('click', closeNav);
-});
+// navItems.forEach((navItem) => {
+//   navItem.addEventListener('click', closeNav);
+// });
+
+const navItems = new Section(
+  {
+    data: navItemArray,
+    renderer: (data) => {
+      const navItemInstance = new NavItem(data, '#nav-item-template');
+      const navItemElement = navItemInstance.generateNavItem();
+      navItems.setItem(navItemElement);
+    },
+  },
+  '.nav__container'
+);
+
+navItems.renderer();
 
 const kitsCard = new Section(
   {

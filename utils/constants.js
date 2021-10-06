@@ -126,3 +126,26 @@ export const freebieArray = [
     filepath: 'https://sharonjseg.github.io/Lil-Treasures/freebies/maze.pdf',
   },
 ];
+
+export const navItemArray = [
+  {
+    href: '#subscribe',
+    text: 'Subscribe',
+    type: '_type_subscribe',
+  },
+  {
+    href: '#kits',
+    text: 'Subscription Kits',
+    type: '',
+  },
+  {
+    href: '#freebies',
+    text: 'Free Downloads',
+    type: '',
+  },
+  {
+    href: '#about-us',
+    text: 'About Us',
+    type: '',
+  },
+];
