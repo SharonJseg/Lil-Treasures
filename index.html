@@ -106,7 +106,7 @@
                     week.
                 </p>
                 <ul class="kits__card-container">
-                    <li class="kits__card kits__card_type-science">
+                    <!-- <li class="kits__card kits__card_type-science">
                         <img src="./images/science_icon.svg" alt="science icon of a vial" class="kits__card-image" />
                         <h3 class="kits__card-title">Science Kit</h3>
                         <p class="kits__card-description">
@@ -224,7 +224,7 @@
                         <button type="button" class="button button_pink">
                             Order Now!
                         </button>
-                    </li>
+                    </li> -->
                 </ul>
             </section>
 
@@ -265,7 +265,7 @@
         </main>
 
 
-        <footer class="footer">
+        <footer class="footer" id="about-us">
             <div class="footer__columns">
                 <div class="footer__column">
                     <img class="logo logo_footer" src="./images/logo.png" alt="logo">
@@ -305,7 +305,61 @@
                 </nav>
             </div>
         </footer>
+
+        <div class="popup">
+            <div class="popup__form">
+                <button aria-label="popup__close" class="popup__close" type="button"></button>
+                <form class="form" name="form" novalidate>
+                    <h2 class="form__header">Order Form</h2>
+                    <fieldset class="form__set">
+                        <select class="form__select form__select_type_age" name="formSelectAge" id="formSelectAge"
+                            required>
+                            <option selected disabled hidden>Age group</option>
+                            <option class=form__select_option>3-5 years</option>
+                            <option>6-9 years</option>
+                            <option>10-12 years</option>
+                        </select>
+                        <select class="form__select form__select_type_kit" name="formName" id="formName" required>
+                            <option selected disabled hidden>Kit type</option>
+                            <option>Science Kit</option>
+                            <option>Art Kit</option>
+                            <option>Nature Kit</option>
+                            <option>Surprise Kit</option>
+                        </select>
+                        <input class="form__input form__input_type_email" type="email" name="formEmail" id="formEmail"
+                            placeholder="Email" required>
+                        <span class="form__input-error form__input-error_type_email form__input-error_active"
+                            id="formEmail-error"></span>
+                        <button aria-label="submit" class="button form__button form__button_disabled" type="submit">Send
+                            it</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
     </div>
+
+    <!-- <li class="kits__card-contents_list-item"></li> -->
+
+    <template id="kit-card-template">
+        <li class="kits__card">
+            <img src="" alt="" class="kits__card-image" />
+            <h3 class="kits__card-title"></h3>
+            <p class="kits__card-description"></p>
+            <div class="kits__card-divider"></div>
+            <div class="kits__card-contents">
+                <p class="kits__card-contents_title">With the kit you get:</p>
+                <ul class="kits__card-contents_list">
+
+                </ul>
+            </div>
+            <button type="button" class="button button_pink">
+                Order Now!
+            </button>
+        </li>
+    </template>
+
+
     <script src="https://printjs-4de6.kxcdn.com/print.min.js" defer></script>
 
     <script src="./pages/index.js" type="module"></script>

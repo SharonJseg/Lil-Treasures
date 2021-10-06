@@ -1,3 +1,7 @@
+import { kitCardArray } from '../utils/constants.js';
+import Section from '../components/Section.js';
+import KitCard from '../components/KitCard.js';
+
 const hamburgerButton = document.querySelector('.nav__mobile-button');
 const navContainer = document.querySelector('.nav__container');
 
@@ -37,3 +41,17 @@ kitsCardImages.forEach((image) =>
 kitsCardImages.forEach((image) =>
   image.addEventListener('mouseout', removeAnimation)
 );
+
+const kitsCard = new Section(
+  {
+    data: kitCardArray,
+    renderer: (data) => {
+      const cardInstance = new KitCard(data, '#kit-card-template');
+      const cardElement = cardInstance.generateCard();
+      kitsCard.setItem(cardElement);
+    },
+  },
+  '.kits__card-container'
+);
+
+kitsCard.renderer();
