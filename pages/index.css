@@ -192,6 +192,12 @@
   cursor: default;
 }
 
+.popup_opened {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.5s, opacity 0.5s linear;
+}
+
 @media screen and (max-width: 1024px) {
   .popup__form {
     width: 350px;

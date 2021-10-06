@@ -149,3 +149,6 @@ export const navItemArray = [
     type: '',
   },
 ];
+
+export const hamburgerButton = document.querySelector('.nav__mobile-button');
+export const navContainer = document.querySelector('.nav__container');

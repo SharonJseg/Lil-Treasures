@@ -1,5 +1,5 @@
 export default class KitCard {
-  constructor(data, cardSelector) {
+  constructor(data, cardSelector, { handlerOpenForm }) {
     this._cardSelector = cardSelector;
     this._type = data.type;
     this._imageSrc = data.image.src;
@@ -7,6 +7,7 @@ export default class KitCard {
     this._title = data.title;
     this._description = data.description;
     this._list = data.list;
+    this._handlerOpenForm = handlerOpenForm;
   }
 
   _getTemplate() {
@@ -29,8 +30,10 @@ export default class KitCard {
 
   _setEventListeners() {
     const card = this._element;
+    const submitButton = this._element.querySelector('.button_pink');
     card.addEventListener('mouseover', this._addAnimation);
     card.addEventListener('mouseout', this._removeAnimation);
+    submitButton.addEventListener('click', this._handlerOpenForm);
   }
 
   generateCard() {
