@@ -1,6 +1,8 @@
 .button_pink {
   background: #e87c8e;
   box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.3);
+  margin-top: auto;
+  align-self: center;
 }
 
 .button_pink:hover {

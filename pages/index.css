@@ -42,6 +42,7 @@
 @import url(../blocks/kits/__card-title/kits__card-title.css);
 @import url(../blocks/kits/__card-description/kits__card-description.css);
 @import url(../blocks/kits/__card-divider/kits__card-divider.css);
+@import url(../blocks/kits/__card-contents/kits__card-contents.css);
 @import url(../blocks/kits/__card-contents/_title/kits__card-contents_title.css);
 @import url(../blocks/kits/__card-contents/_list/kits__card-contents_list.css);
 @import url(../blocks/kits/__card-contents/_list-item/kits__card-contents_list-item.css);
