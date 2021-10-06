@@ -1,8 +1,3 @@
-.lead__container {
-  /* margin-top: 219px;
-  margin-right: 65px; */
-}
-
 @media screen and (max-width: 600px) {
   .lead__container {
     margin: 0;
