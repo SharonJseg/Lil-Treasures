@@ -65,4 +65,5 @@ export const kitCardArray = [
   },
 ];
 
-export const printfile = 'https://sharonjseg.github.io/freebies/ladybug.pdf';
+export const printfile =
+  'https://drive.google.com/file/d/1SWkadNIvj4UxEkwBLj57zgwmp3mVkQgx/view?usp=sharing';
