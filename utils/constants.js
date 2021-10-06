@@ -65,4 +65,4 @@ export const kitCardArray = [
   },
 ];
 
-export const printfile = '../freebies/ladybug.pdf';
+export const printfile = '/freebies/ladybug.pdf';
