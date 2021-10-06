@@ -1,5 +1,10 @@
-import { freebieArray, kitCardArray } from '../utils/constants.js';
+import {
+  freebieArray,
+  kitCardArray,
+  ageCardArray,
+} from '../utils/constants.js';
 import Section from '../components/Section.js';
+import AgeCard from '../components/AgeCard.js';
 import KitCard from '../components/KitCard.js';
 import Freebie from '../components/Freebie.js';
 
@@ -52,3 +57,17 @@ const freebie = new Section(
 );
 
 freebie.renderer();
+
+const ageCard = new Section(
+  {
+    data: ageCardArray,
+    renderer: (data) => {
+      const cardInstance = new AgeCard(data, '#age-card-template');
+      const cardElement = cardInstance.generateCard();
+      ageCard.setItem(cardElement);
+    },
+  },
+  '.subscribe__list'
+);
+
+ageCard.renderer();

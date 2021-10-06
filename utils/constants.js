@@ -1,3 +1,30 @@
+export const ageCardArray = [
+  {
+    title: '3-5 years',
+    text: 'A collection of activities and ideas to promote learning and development.',
+    image: {
+      src: './images/age_3_5.jpg',
+      alt: 'Image of a toddler playing',
+    },
+  },
+  {
+    title: '6-9 years',
+    text: 'Learning Activities for grasping new things.',
+    image: {
+      src: './images/age_6_9.jpg',
+      alt: 'Image of a child doing a scientific experiment',
+    },
+  },
+  {
+    title: '10-12 years',
+    text: 'Awesome Projects for Tween kids. Practicing skills in order to become better.',
+    image: {
+      src: './images/age_10_12.jpg',
+      alt: 'Image of hands building a robot',
+    },
+  },
+];
+
 export const kitCardArray = [
   {
     type: '_type-science',
