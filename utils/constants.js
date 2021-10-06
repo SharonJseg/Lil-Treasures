@@ -66,4 +66,4 @@ export const kitCardArray = [
 ];
 
 export const printfile =
-  'https://drive.google.com/file/d/1SWkadNIvj4UxEkwBLj57zgwmp3mVkQgx/view?usp=sharing';
+  'https://code.s3.yandex.net/web-developer/project-1/sprint-1-en-brief.pdf';
