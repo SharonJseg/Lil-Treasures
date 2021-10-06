@@ -1,6 +1,5 @@
 const hamburgerButton = document.querySelector('.nav__mobile-button');
 const navContainer = document.querySelector('.nav__container');
-const printImage = document.querySelector('.freebie__image');
 
 const navItems = [...document.querySelectorAll('.nav__item')];
 const kitsCardImages = [...document.querySelectorAll('.kits__card-image')];
@@ -21,10 +20,6 @@ const closeNav = () => {
 hamburgerButton.addEventListener('click', toggleNav);
 navItems.forEach((navItem) => {
   navItem.addEventListener('click', closeNav);
-});
-
-printImage.addEventListener('click', () => {
-  console.log('test');
 });
 
 const addAnimation = (evt) => {
