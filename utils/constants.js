@@ -72,8 +72,7 @@ export const freebieArray = [
       alt: 'drawing of a ladybug',
     },
     caption: 'Coloring',
-    filepath: '/freebies/ladybug.pdf',
-    // filepath: 'https://sharonjseg.github.io/Lil-Treasures/freebies/ladybug.pdf',
+    filepath: 'https://sharonjseg.github.io/Lil-Treasures/freebies/ladybug.pdf',
   },
   {
     image: {
@@ -81,8 +80,7 @@ export const freebieArray = [
       alt: 'drawing of origami instructions',
     },
     caption: 'Origami',
-    filepath: '/freebies/origami.pdf',
-    // filepath: 'https://sharonjseg.github.io/Lil-Treasures/freebies/origami.pdf',
+    filepath: 'https://sharonjseg.github.io/Lil-Treasures/freebies/origami.pdf',
   },
   {
     image: {
@@ -90,8 +88,7 @@ export const freebieArray = [
       alt: 'image of a written page',
     },
     caption: 'Writing',
-    filepath: '/freebies/writing.pdf',
-    // filepath: 'https://sharonjseg.github.io/Lil-Treasures/freebies/writing.pdf',
+    filepath: 'https://sharonjseg.github.io/Lil-Treasures/freebies/writing.pdf',
   },
   {
     image: {
@@ -99,7 +96,6 @@ export const freebieArray = [
       alt: 'drawing of a maze in the shape of a snail',
     },
     caption: 'Maze',
-    filepath: '/freebies/maze.pdf',
-    // filepath: 'https://sharonjseg.github.io/Lil-Treasures/freebies/maze.pdf',
+    filepath: 'https://sharonjseg.github.io/Lil-Treasures/freebies/maze.pdf',
   },
 ];
