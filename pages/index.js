@@ -1,19 +1,12 @@
-import { kitCardArray, printfile } from '../utils/constants.js';
+import { freebieArray, kitCardArray } from '../utils/constants.js';
 import Section from '../components/Section.js';
 import KitCard from '../components/KitCard.js';
+import Freebie from '../components/Freebie.js';
 
 const hamburgerButton = document.querySelector('.nav__mobile-button');
 const navContainer = document.querySelector('.nav__container');
 
 const navItems = [...document.querySelectorAll('.nav__item')];
-const kitsCardImages = [...document.querySelectorAll('.kits__card-image')];
-
-const testing = document.querySelector('.test');
-console.log(testing);
-testing.addEventListener('click', () => {
-  console.log('click');
-  printJS(printfile);
-});
 
 const toggleNav = () => {
   if (!navContainer.classList.contains('nav_opened')) {
@@ -21,7 +14,6 @@ const toggleNav = () => {
   } else {
     navContainer.classList.remove('nav_opened');
   }
-  //   navContainer.classList.toggle('nav_opened');
 };
 
 const closeNav = () => {
@@ -32,22 +24,6 @@ hamburgerButton.addEventListener('click', toggleNav);
 navItems.forEach((navItem) => {
   navItem.addEventListener('click', closeNav);
 });
-
-const addAnimation = (evt) => {
-  evt.target.classList.add('playful');
-};
-
-const removeAnimation = (evt) => {
-  evt.target.classList.remove('playful');
-};
-
-kitsCardImages.forEach((image) =>
-  image.addEventListener('mouseover', addAnimation)
-);
-
-kitsCardImages.forEach((image) =>
-  image.addEventListener('mouseout', removeAnimation)
-);
 
 const kitsCard = new Section(
   {
@@ -62,3 +38,18 @@ const kitsCard = new Section(
 );
 
 kitsCard.renderer();
+
+const freebie = new Section(
+  {
+    data: freebieArray,
+    renderer: (data) => {
+      const freebieInstance = new Freebie(data, '#freebie-template');
+      const freebieElement = freebieInstance.generateFreebie();
+      freebie.setItem(freebieElement);
+      console.log(freebieElement);
+    },
+  },
+  '.freebie__list'
+);
+
+freebie.renderer();

@@ -65,5 +65,37 @@ export const kitCardArray = [
   },
 ];
 
-export const printfile =
-  'https://sharonjseg.github.io/Lil-Treasures/freebies/ladybug.pdf';
+export const freebieArray = [
+  {
+    image: {
+      src: './images/coloring.jpg',
+      alt: 'drawing of a ladybug',
+    },
+    caption: 'Coloring',
+    filepath: 'https://sharonjseg.github.io/Lil-Treasures/freebies/ladybug.pdf',
+  },
+  {
+    image: {
+      src: './images/origami.jpg',
+      alt: 'drawing of origami instructions',
+    },
+    caption: 'Origami',
+    filepath: 'https://sharonjseg.github.io/Lil-Treasures/freebies/origami.pdf',
+  },
+  {
+    image: {
+      src: './images/writing.jpg',
+      alt: 'image of a written page',
+    },
+    caption: 'Writing',
+    filepath: 'https://sharonjseg.github.io/Lil-Treasures/freebies/writing.pdf',
+  },
+  {
+    image: {
+      src: './images/maze.jpg',
+      alt: 'drawing of a maze in the shape of a snail',
+    },
+    caption: 'Maze',
+    filepath: 'https://sharonjseg.github.io/Lil-Treasures/freebies/maze.pdf',
+  },
+];

@@ -121,25 +121,7 @@
                 </p>
                 <div class="freebie__container">
                     <ul class="freebie__list">
-                        <li class="freebie__item">
-                            <img src="./images/coloring.jpg" alt="drawing of a ladybug" class="freebie__image test" />
-                            <p class="freebie__caption">Coloring</p>
-                        </li>
-                        <li class="freebie__item">
-                            <img src="./images/origami.jpg" alt="drawing of origami instructions" class="freebie__image"
-                                onclick="printJS('./freebies/origami.pdf')" />
-                            <p class="freebie__caption">Origami</p>
-                        </li>
-                        <li class="freebie__item">
-                            <img src="./images/writing.jpg" alt="image of a written page" class="freebie__image"
-                                onclick="printJS('./freebies/writing.pdf')" />
-                            <p class="freebie__caption">Writing</p>
-                        </li>
-                        <li class="freebie__item">
-                            <img src="./images/maze.jpg" alt="drawing of a maze in the shape of a snail"
-                                class="freebie__image" onclick="printJS('./freebies/maze.pdf')" />
-                            <p class="freebie__caption">Maze</p>
-                        </li>
+
                     </ul>
                 </div>
             </section>
@@ -221,8 +203,6 @@
 
     </div>
 
-    <!-- <li class="kits__card-contents_list-item"></li> -->
-
     <template id="kit-card-template">
         <li class="kits__card">
             <img src="" alt="" class="kits__card-image" />
@@ -241,6 +221,12 @@
         </li>
     </template>
 
+    <template id="freebie-template">
+        <li class="freebie__item">
+            <img src="" alt="" class="freebie__image" />
+            <p class="freebie__caption"></p>
+        </li>
+    </template>
 
     <script src="https://printjs-4de6.kxcdn.com/print.min.js" defer></script>
 
