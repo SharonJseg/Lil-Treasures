@@ -1,6 +1,7 @@
 export const ageCardArray = [
   {
     title: '3-5 years',
+    background: 'age__color-bg_type_pink',
     text: 'A collection of activities and ideas to promote learning and development.',
     image: {
       src: './images/age_3_5.jpg',
@@ -9,6 +10,7 @@ export const ageCardArray = [
   },
   {
     title: '6-9 years',
+    background: 'age__color-bg_type_orange',
     text: 'Learning Activities for grasping new things.',
     image: {
       src: './images/age_6_9.jpg',
@@ -17,6 +19,7 @@ export const ageCardArray = [
   },
   {
     title: '10-12 years',
+    background: 'age__color-bg_type_turq',
     text: 'Awesome Projects for Tween kids. Practicing skills in order to become better.',
     image: {
       src: './images/age_10_12.jpg',

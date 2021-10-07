@@ -1,6 +1,7 @@
 export default class AgeCard {
   constructor(data, cardSelector) {
     this._cardSelector = cardSelector;
+    this._background = data.background;
     this._title = data.title;
     this._text = data.text;
     this._imageSrc = data.image.src;
@@ -17,6 +18,9 @@ export default class AgeCard {
 
   generateCard() {
     this._element = this._getTemplate();
+    this._element
+      .querySelector('.age__color-bg')
+      .classList.add(this._background);
     this._element.querySelector('.age__title').textContent = this._title;
     this._element.querySelector('.age__text').textContent = this._text;
     this._element.querySelector('.age__image').src = this._imageSrc;

@@ -1,0 +1,22 @@
+.lead__image {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  max-height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media screen and (max-width: 600px) {
+  .lead__image {
+    top: 20%;
+    left: -25%;
+  }
+}

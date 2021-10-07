@@ -6,11 +6,13 @@
   justify-content: center;
   column-gap: 55px;
   padding: 0;
+  row-gap: 25px;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1280px) {
   .subscribe__list {
-    column-gap: 30px;
+    /* column-gap: 10px; */
+    /* margin: 50px 16px 0; */
     row-gap: 25px;
   }
 }

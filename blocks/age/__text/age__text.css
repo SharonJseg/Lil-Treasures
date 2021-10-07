@@ -4,6 +4,7 @@
   line-height: 33px;
   max-width: 300px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-left: 10px;
   text-align: left;
+  z-index: 1;
 }
