@@ -159,5 +159,25 @@ export const navItemArray = [
   },
 ];
 
+export const titlesArray = [
+  {
+    section: 'subscribe',
+    title: 'Choose the age group',
+    subtitle:
+      'We selected best age appropriate activities for your kid’s development',
+  },
+  {
+    section: 'kits',
+    title: 'Subscription kits',
+    subtitle:
+      'Get your weekly subscription and keep your kids busy for the whole week.',
+  },
+  {
+    section: 'freebies',
+    title: 'We do care about kids but we also care about parents',
+    subtitle: 'Get FREE printable tasks and enjoy quiet moments!',
+  },
+];
+
 export const hamburgerButton = document.querySelector('.nav__mobile-button');
 export const navContainer = document.querySelector('.nav__container');

@@ -14,6 +14,8 @@ export default class PopupWithForm extends Popup {
   _handleSubmitForm = (evt) => {
     evt.preventDefault();
     this.close();
+    const popupTextBox = new PopupWithForm('.popup_type_text-box');
+    popupTextBox.open();
   };
 
   setEventListeners() {

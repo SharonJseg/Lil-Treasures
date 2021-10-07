@@ -3,6 +3,7 @@ import {
   kitCardArray,
   ageCardArray,
   navItemArray,
+  titlesArray,
   hamburgerButton,
   navContainer,
 } from '../utils/constants.js';
@@ -12,6 +13,7 @@ import AgeCard from '../components/AgeCard.js';
 import KitCard from '../components/KitCard.js';
 import Freebie from '../components/Freebie.js';
 import NavItem from '../components/NavItem.js';
+import TitleItem from '../components/TitleItem.js';
 
 const toggleNav = () => {
   if (!navContainer.classList.contains('nav_opened')) {
@@ -85,3 +87,29 @@ const ageCard = new Section(
 );
 
 ageCard.renderer();
+
+const titleContainer = new Section({
+  data: titlesArray,
+  renderer: (data) => {
+    const titleInstance = new TitleItem(data, '#titles-template');
+    const titleElement = titleInstance.generateTitle();
+    const selector = titleElement.querySelector('.section').classList.item(1);
+    const tagTitle = document.createElement('h2');
+    tagTitle.classList.add('section__title');
+    const tagSubtitle = document.createElement('p');
+    tagSubtitle.classList.add('section__subtitle');
+    const textTitle = document.createTextNode(
+      titleElement.querySelector('.section__title').textContent
+    );
+    const textSubtitle = document.createTextNode(
+      titleElement.querySelector('.section__subtitle').textContent
+    );
+    tagTitle.appendChild(textTitle);
+    tagSubtitle.appendChild(textSubtitle);
+    const element = document.querySelector(`.${selector}`);
+    element.prepend(tagSubtitle);
+    element.prepend(tagTitle);
+  },
+});
+
+titleContainer.renderer();
