@@ -1,3 +1,5 @@
 .kits__card-image {
-  height: 120px;
+  min-height: 120px;
+  color: #2a3638;
+  margin-top: 84px;
 }

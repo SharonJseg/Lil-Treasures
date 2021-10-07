@@ -1,13 +1,18 @@
 .button_pink {
-  background: #e87c8e;
+  box-sizing: border-box;
+  background: #fff;
   box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.3);
-  margin-top: auto;
+  margin-top: 32px;
+  margin-bottom: 58px;
   align-self: center;
   outline: none;
+  color: #000;
 }
 
 .button_pink:hover {
-  color: #be6473;
+  color: rgb(31, 31, 31);
+  filter: brightness(0.92);
+  -webkit-filter: brightness(0.92);
 }
 
 @media screen and (max-width: 600px) {

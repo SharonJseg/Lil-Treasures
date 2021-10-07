@@ -37,7 +37,7 @@ export const kitCardArray = [
     },
     title: 'Science Kit',
     description:
-      'Kids will learn to focus and to solve a problem. This Kit get them into basics of Astronomy, Math, Physics and Chemistry.',
+      'Kids learn to focus and to solve a problem. This Kit get them into basics of Astronomy, Math, Physics and Chemistry. It would make them imagine things, observe and be curious.',
     list: [
       'Scientific journal to read and fill',
       'Chemical experiments',
@@ -55,12 +55,14 @@ export const kitCardArray = [
     },
     title: 'Art Kit',
     description:
-      'his Kit introduces them into the wonderful world of arts. They will learn to draw, paint and even sculpt!',
+      'Art and craft activities are always a fun way to teach kids. This Kit will challenge children and provoke them into using imagination and creativity. Guide them as little as possible!',
     list: [
-      'Color pencils',
+      'Special set of drawing paper',
+      'DIY play-doh kit',
       'Origami paper and instructions',
-      'New Stickers every month',
-      'Playdough!',
+      'Puzzles to paint',
+      'Task for colouring',
+      'Cross stitching set',
     ],
   },
   {
@@ -71,12 +73,14 @@ export const kitCardArray = [
     },
     title: 'Nature Kit',
     description:
-      'Learn about the natural world, from the tiny bacteria swimming in a puddle to the huge elephant stomping in the jungle!',
+      'It helps children to observe and focus. The Kit will assist kids in noticing seasonal changes, natural processes, learn about humans and animals. Also, it will teach them survival tricks.',
     list: [
-      'A monthly nature subject to tackle',
-      'Different maps of the world',
-      'Flower seeds you can plant and grow',
-      'Educational games with a nature theme',
+      'Seeds you can plant and grow',
+      'Tracing task for the world maps',
+      'Nature journal to fill in',
+      'DIY experiment set',
+      'Krafts with natual materials',
+      'Dinosaur egg collection',
     ],
   },
   {
@@ -87,10 +91,12 @@ export const kitCardArray = [
     },
     title: 'Mystery Kit',
     description:
-      "Every month your child will get a surprise kit, it could be science, arts or nature. It's mystery! who doesn't like a nice surprise?",
+      "Every week a child will get a surprise kit, it could be science, arts or nature. It's mystery! Who doesn't like  surprise? Let our professionals surprise yourself and child with activities on our choise!",
     list: [
-      'A random monthly kit!',
-      "It could be the science kit this month but shh! it's a secret!",
+      'Creative projects',
+      'DIY manuals',
+      'Printed tasks to fill',
+      '... and much more!',
     ],
   },
 ];
