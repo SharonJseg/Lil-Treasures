@@ -2,7 +2,7 @@
   position: absolute;
   top: 50%;
   left: 0;
-  z-index: -1;
+  z-index: 0;
   transform: translate(0, -50%);
   -webkit-transform: translate(0, -50%);
   -moz-transform: translate(0, -50%);

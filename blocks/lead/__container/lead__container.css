@@ -1,6 +1,7 @@
 .lead__container {
   margin-right: 65px;
   margin-bottom: 100px;
+  z-index: 1;
   /* position: relative;
   padding: 50px; */
 }

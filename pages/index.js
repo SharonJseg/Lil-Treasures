@@ -88,28 +88,28 @@ const ageCard = new Section(
 
 ageCard.renderer();
 
-const titleContainer = new Section({
-  data: titlesArray,
-  renderer: (data) => {
-    const titleInstance = new TitleItem(data, '#titles-template');
-    const titleElement = titleInstance.generateTitle();
-    const selector = titleElement.querySelector('.section').classList.item(1);
-    const tagTitle = document.createElement('h2');
-    tagTitle.classList.add('section__title');
-    const tagSubtitle = document.createElement('p');
-    tagSubtitle.classList.add('section__subtitle');
-    const textTitle = document.createTextNode(
-      titleElement.querySelector('.section__title').textContent
-    );
-    const textSubtitle = document.createTextNode(
-      titleElement.querySelector('.section__subtitle').textContent
-    );
-    tagTitle.appendChild(textTitle);
-    tagSubtitle.appendChild(textSubtitle);
-    const element = document.querySelector(`.${selector}`);
-    element.prepend(tagSubtitle);
-    element.prepend(tagTitle);
-  },
-});
+const titleSetup = (data) => {
+  const titles = new TitleItem(data, '#title-template');
+  return titles;
+};
 
-titleContainer.renderer();
+const populateTitles = (title) => {
+  const { section: sectionName } = title;
+  const titleSection = new Section(
+    {
+      data: titlesArray,
+      renderer: (data) => {
+        const { section: sectionInstanceName } = data;
+        if (sectionInstanceName == sectionName) {
+          titleSection.prependItem(titleSetup(data).generateTitle());
+        }
+      },
+    },
+    `.${sectionName}`
+  );
+  titleSection.renderer();
+};
+
+titlesArray.forEach((title) => {
+  populateTitles(title);
+});

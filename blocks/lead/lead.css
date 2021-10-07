@@ -1,9 +1,13 @@
 .lead {
-  height: 100vh;
+  max-height: 1440px;
+  height: 100%;
+  height: 75vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin-bottom: 100px;
+  background: #ebebeb;
+  position: relative;
 }
 
 @media screen and (max-width: 600px) {

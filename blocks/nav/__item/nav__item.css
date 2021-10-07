@@ -1,5 +1,11 @@
 .nav__item {
-  margin-left: 20px;
+  margin-left: 58px;
+}
+
+@media screen and (max-width: 1280px) {
+  .nav__item {
+    margin-left: 20px;
+  }
 }
 
 @media screen and (max-width: 1024px) {

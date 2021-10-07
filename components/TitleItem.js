@@ -9,14 +9,13 @@ export default class TitleItem {
   _getTemplate() {
     const titleElement = document
       .querySelector(this._titleSelector)
-      .content.querySelector('.title_item')
-      .cloneNode(true);
+      .content.cloneNode(true);
     return titleElement;
   }
 
   generateTitle() {
     this._element = this._getTemplate();
-    this._element.querySelector(`.section`).classList.add(this._section);
+    // this._element.querySelector(`.section`).classList.add(this._section);
     this._element.querySelector(`.section__title`).textContent = this._title;
     this._element.querySelector(`.section__subtitle`).textContent =
       this._subtitle;
