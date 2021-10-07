@@ -15,5 +15,13 @@
 @media screen and (max-width: 600px) {
   .kits__card {
     width: 100%;
+    /* margin: 0 42px; */
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .kits__card {
+    max-width: 339px;
+    margin: 0 auto;
   }
 }

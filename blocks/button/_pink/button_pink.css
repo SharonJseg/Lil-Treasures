@@ -23,6 +23,7 @@
 
 @media screen and (max-width: 425px) {
   .button_pink {
-    width: 75%;
+    margin-top: 30px;
+    margin-bottom: 54px;
   }
 }

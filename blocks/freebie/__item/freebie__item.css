@@ -10,6 +10,6 @@
 
 @media screen and (max-width: 425px) {
   .freebie__item {
-    width: 100%;
+    width: 50%;
   }
 }

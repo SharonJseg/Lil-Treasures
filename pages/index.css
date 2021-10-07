@@ -256,18 +256,6 @@
   margin-top: 30px;
 }
 
-.footer__createdby {
-  position: absolute;
-  text-align: right;
-  bottom: 20px;
-  right: 65px;
-}
-
-.logo_group {
-  height: 40%;
-  width: 40%;
-}
-
 @media screen and (max-width: 1024px) {
   .popup__form {
     width: 350px;

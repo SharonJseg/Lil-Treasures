@@ -178,7 +178,7 @@ export const titlesArray = [
   },
   {
     section: 'freebies',
-    title: 'We do care about kids but we also care about parents',
+    title: 'We also care about parents!',
     subtitle: 'Get FREE printable tasks and enjoy quiet moments!',
   },
 ];

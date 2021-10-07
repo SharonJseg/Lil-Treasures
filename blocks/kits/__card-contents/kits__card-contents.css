@@ -14,3 +14,9 @@
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
+
+@media screen and (max-width: 425px) {
+  .kits__card-contents {
+    min-width: 271px;
+  }
+}
