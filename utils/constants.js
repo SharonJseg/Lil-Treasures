@@ -1,3 +1,12 @@
+export const config = {
+  inputSelector: '.form__input',
+  selectSelector: '.form__select',
+  submitButtonSelector: '.form__button',
+  inactiveButtonClass: 'form__button_disabled',
+  inputErrorClass: 'form__input_type_error',
+  errorClass: 'form__input-error_active',
+};
+
 export const ageCardArray = [
   {
     title: '3-5 years',

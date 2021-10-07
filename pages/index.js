@@ -6,6 +6,7 @@ import {
   titlesArray,
   hamburgerButton,
   navContainer,
+  config,
 } from '../utils/constants.js';
 import Section from '../components/Section.js';
 import PopupWithForm from '../components/PopupWithForm.js';
@@ -14,6 +15,13 @@ import KitCard from '../components/KitCard.js';
 import Freebie from '../components/Freebie.js';
 import NavItem from '../components/NavItem.js';
 import TitleItem from '../components/TitleItem.js';
+import FormValidator from '../components/FormValidator.js';
+
+const formValidator = new FormValidator(
+  config,
+  document.querySelector('.popup_type_form')
+);
+formValidator.enableValidation();
 
 const toggleNav = () => {
   if (!navContainer.classList.contains('nav_opened')) {
@@ -42,6 +50,7 @@ navItems.renderer();
 const popupForm = new PopupWithForm('.popup');
 
 function openFormPopup() {
+  formValidator.resetValidation();
   popupForm.open();
 }
 const kitsCard = new Section(
