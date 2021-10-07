@@ -82,3 +82,23 @@
 @import url(../blocks/footer/__form/footer__form-textarea.css);
 @import url(../blocks/button/_footer/button_footer.css);
 @import url(../blocks/footer/__column-link/_type/footer__column-link_type_large.css);
+
+.form__input {
+  appearance: none;
+  border: 4px solid transparent;
+  width: 83%;
+  min-height: 88px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.375;
+  margin: auto;
+  margin-top: 36px;
+  padding: 0 28px;
+  border-radius: 40px;
+  outline: none;
+  padding-left: 28px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
