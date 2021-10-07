@@ -100,7 +100,7 @@
 
         </footer>
 
-        <div class="popup">
+        <div class="popup popup_type_form">
             <div class="popup__form">
                 <button aria-label="popup__close" class="popup__close" type="button"></button>
                 <form class="form" name="form" novalidate>
@@ -108,87 +108,85 @@
                     <fieldset class="form__set">
                         <select class="form__select form__select_type_age" name="formSelectAge" id="formSelectAge"
                             required>
-                            <option selected disabled hidden>Age group</option>
-                            <option class="form__select_option">3-5 years</option>
-                            <option>6-9 years</option>
-                            <option>10-12 years</option>
+                            <option class="form__select_option" value="" selected disabled hidden>Select age</option>
+                            <option class="form__select_option" value="1">3-5 years</option>
+                            <option class="form__select_option" value="1">6-9 years</option>
+                            <option class="form__select_option" value="1">10-12 years</option>
                         </select>
-                        <select class="form__select form__select_type_kit" name="formName" id="formName" required>
-                            <option selected disabled hidden>Kit type</option>
-                            <option>Science Kit</option>
-                            <option>Art Kit</option>
-                            <option>Nature Kit</option>
-                            <option>Surprise Kit</option>
+                        <span class="form__input-error form__input-error_type_email form__input-error_active"
+                            id="formSelectAge-error"></span>
+                        <select class="form__select form__select_type_kit" name="formKitName" id="formKitName" required>
+                            <option class="form__select_option" value="" selected disabled hidden>Kit type</option>
+                            <option class="form__select_option" value="1">Science Kit</option>
+                            <option class="form__select_option" value="1">Art Kit</option>
+                            <option class="form__select_option" value="1">Nature Kit</option>
+                            <option class="form__select_option" value="1">Surprise Kit</option>
                         </select>
-                        <input class="form__input form__input_type_email" type="email" name="formEmail" id="formEmail"
-                            placeholder="Email" required />
-                        <span class="
-                  form__input-error
-                  form__input-error_type_email
-                  form__input-error_active
-                " id="formEmail-error"></span>
-                        <button aria-label="submit" class="button form__button form__button_disabled" type="submit">
-                            Send it
-                        </button>
+                        <span class="form__input-error form__input-error_type_email form__input-error_active"
+                            id="formKitName-error"></span>
+                        <input class="form__select form__input form__input_type_email" type="email" name="formEmail"
+                            id="formEmail" placeholder="mychild@mail.com" required>
+                        <span class="form__input-error form__input-error_type_email form__input-error_active"
+                            id="formEmail-error"></span>
+                        <button aria-label="submit" class="button form__button form__button_disabled" type="submit"
+                            disabled>Submit order</button>
                     </fieldset>
                 </form>
             </div>
         </div>
-    </div>
-
-    <div class="popup popup_type_text-box">
-        <div class="popup__form">
-            <button aria-label="popup__close" class="popup__close" type="button"></button>
-            <form class="form" name="form">
-                <h2 class="form__text">coming soon...</h2>
-            </form>
-        </div>
-    </div>
-
-    <div class="age__img-btn"></div>
-    <template id="age-card-template">
-        <li class="age">
-            <span class="age__color-bg"></span>
-            <h2 class="age__title"></h2>
-            <p class="age__text"></p>
-            <a href="#kits" class="button button_age">Learn More</a>
-            <img class="age__image" src="" alt="" />
-        </li>
-    </template>
-
-    <template id="kit-card-template">
-        <li class="kits__card">
-            <img src="" alt="" class="kits__card-image" />
-            <h3 class="kits__card-title"></h3>
-            <p class="kits__card-description"></p>
-            <div class="kits__card-contents">
-                <p class="kits__card-contents_title">With the kit you get:</p>
-                <ul class="kits__card-contents_list"></ul>
+        <div class="popup popup_type_text-box">
+            <div class="popup__form">
+                <button aria-label="popup__close" class="popup__close" type="button"></button>
+                <form class="form" name="form">
+                    <h2 class="form__text">coming soon...</h2>
+                </form>
             </div>
-            <button type="button" class="button button_pink">Order Now!</button>
-        </li>
-    </template>
+        </div>
 
-    <template id="freebie-template">
-        <li class="freebie__item">
-            <a href="" class="freebie__download" target="_blank" download>
-                <img src="" alt="" class="freebie__image" /></a>
-            <p class="freebie__caption"></p>
-        </li>
-    </template>
+        <div class="age__img-btn"></div>
+        <template id="age-card-template">
+            <li class="age">
+                <span class="age__color-bg"></span>
+                <h2 class="age__title"></h2>
+                <p class="age__text"></p>
+                <a href="#kits" class="button button_age">Learn More</a>
+                <img class="age__image" src="" alt="" />
+            </li>
+        </template>
 
-    <template id="nav-item-template">
-        <li class="nav__item">
-            <a href="" class="nav__link"></a>
-        </li>
-    </template>
+        <template id="kit-card-template">
+            <li class="kits__card">
+                <img src="" alt="" class="kits__card-image" />
+                <h3 class="kits__card-title"></h3>
+                <p class="kits__card-description"></p>
+                <div class="kits__card-contents">
+                    <p class="kits__card-contents_title">With the kit you get:</p>
+                    <ul class="kits__card-contents_list"></ul>
+                </div>
+                <button type="button" class="button button_pink">Order Now!</button>
+            </li>
+        </template>
 
-    <template id="title-template">
-        <h2 class="section__title"></h2>
-        <p class="section__subtitle"></p>
-    </template>
+        <template id="freebie-template">
+            <li class="freebie__item">
+                <a href="" class="freebie__download" target="_blank" download>
+                    <img src="" alt="" class="freebie__image" /></a>
+                <p class="freebie__caption"></p>
+            </li>
+        </template>
 
-    <script src="./pages/index.js" type="module"></script>
+        <template id="nav-item-template">
+            <li class="nav__item">
+                <a href="" class="nav__link"></a>
+            </li>
+        </template>
+
+        <template id="title-template">
+            <h2 class="section__title"></h2>
+            <p class="section__subtitle"></p>
+        </template>
+
+        <script src="./pages/index.js" type="module"></script>
 </body>
 
 </html>

@@ -1,0 +1,9 @@
+.form__input-error {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  width: 83%;
+  height: 22px;
+  margin: 0 auto -22px;
+  padding: 0;
+}
