@@ -1,6 +1,6 @@
 .subscribe__rectangle {
   box-sizing: border-box;
-  background: #bbdbdd;
+  background: #c2e2e4;
   border-radius: 100px;
   margin: 120px 65px;
   display: flex;
@@ -21,6 +21,11 @@
 
 @media screen and (max-width: 425px) {
   .subscribe__rectangle {
-    margin: 50px 20px;
+    margin: 60px 0;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
   }
 }

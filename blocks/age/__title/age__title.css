@@ -8,3 +8,12 @@
   margin-left: 10px;
   z-index: 1;
 }
+
+@media screen and (max-width: 425px) {
+  .age__title {
+    font-size: 28px;
+    margin-top: 38px;
+    margin-bottom: 38px;
+    margin-left: 50px;
+  }
+}

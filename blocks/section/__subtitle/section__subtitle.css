@@ -4,3 +4,11 @@
   margin: 0 auto;
   margin-bottom: 80px;
 }
+
+@media screen and (max-width: 425px) {
+  .section__subtitle {
+    font-size: 16px;
+    max-width: 281px;
+    margin-bottom: 30px;
+  }
+}

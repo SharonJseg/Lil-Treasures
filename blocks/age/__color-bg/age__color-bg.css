@@ -15,3 +15,9 @@
   -ms-transform: rotate(-5deg) scaleX(1.1);
   -o-transform: rotate(-5deg) scaleX(1.1);
 }
+
+@media screen and (max-width: 425px) {
+  .age__color-bg {
+    top: -22%;
+  }
+}

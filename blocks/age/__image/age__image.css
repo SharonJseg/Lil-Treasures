@@ -22,3 +22,12 @@
     margin-right: 0;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .age__image {
+    width: 115px;
+    height: 115px;
+    bottom: 28%;
+    right: 60%;
+  }
+}

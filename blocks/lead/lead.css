@@ -19,5 +19,6 @@
   .lead {
     align-items: flex-start;
     overflow: hidden;
+    margin-bottom: 60px;
   }
 }
