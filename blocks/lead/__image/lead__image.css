@@ -16,7 +16,13 @@
 
 @media screen and (max-width: 600px) {
   .lead__image {
-    top: 20%;
-    left: -25%;
+    width: 1363px;
+    left: -50%;
+    bottom: -50%;
+    transform: translate(-20%, -40%);
+    -webkit-transform: translate(-20%, -40%);
+    -moz-transform: translate(-20%, -40%);
+    -ms-transform: translate(-20%, -40%);
+    -o-transform: translate(-20%, -40%);
   }
 }
