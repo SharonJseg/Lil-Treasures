@@ -46,6 +46,7 @@ export const kitCardArray = [
       'Robotics task',
       'Draw the planet map',
     ],
+    list_bg: '#40A6A9;',
   },
   {
     type: '_type-art',
@@ -64,6 +65,7 @@ export const kitCardArray = [
       'Task for colouring',
       'Cross stitching set',
     ],
+    list_bg: '#DFCD8D;',
   },
   {
     type: '_type-nature',
@@ -82,6 +84,7 @@ export const kitCardArray = [
       'Krafts with natual materials',
       'Dinosaur egg collection',
     ],
+    list_bg: '#E87C8E;',
   },
   {
     type: '_type-surprise',
@@ -98,6 +101,7 @@ export const kitCardArray = [
       'Printed tasks to fill',
       '... and much more!',
     ],
+    list_bg: '#EBA671;',
   },
 ];
 

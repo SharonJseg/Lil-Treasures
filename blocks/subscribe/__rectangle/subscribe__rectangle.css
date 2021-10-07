@@ -1,6 +1,6 @@
 .subscribe__rectangle {
   box-sizing: border-box;
-  background: rgba(139, 178, 189, 0.4);
+  background: #bbdbdd;
   border-radius: 100px;
   margin: 120px 65px;
   display: flex;

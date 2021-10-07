@@ -7,6 +7,7 @@ export default class KitCard {
     this._title = data.title;
     this._description = data.description;
     this._list = data.list;
+    this._listbg = data.list_bg;
     this._handlerOpenForm = handlerOpenForm;
   }
 
@@ -45,6 +46,9 @@ export default class KitCard {
     this._element.querySelector('.kits__card-title').textContent = this._title;
     this._element.querySelector('.kits__card-description').textContent =
       this._description;
+    this._element
+      .querySelector('.kits__card-contents')
+      .setAttribute('style', `background-color: ${this._listbg}`);
     this._list.forEach((item) => {
       const listItem = document.createElement('li');
       const listItemTextNode = document.createTextNode(item);

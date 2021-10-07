@@ -85,42 +85,43 @@
 
         <footer class="footer" id="about-us">
             <div class="footer__columns">
-                <div class="footer__column">
+                <div class="footer__column footer__column_type_about">
                     <img class="logo logo_footer" src="./images/logo.png" alt="logo">
-                    <ul class="footer__list">
-                        <li>
-                            <p class="footer__text">We help parents to rest</p>
-                        </li>
-                        <li>
-                            <p class="footer__text">We make kids never bored at home</p>
-                        </li>
-                        <li>
-                            <p class="footer__text">We help to avoid screen time</p>
-                        </li>
-                    </ul>
-                    <h2 class="footer__column-heading">contacts</h2>
-                    <a class="footer__column-link" href="#">www.liltreasures.com</a>
+                    <div class="footer__list">
+                        <p class="footer__text">We help parents to rest</p>
+                        <p class="footer__text">We make kids never bored at home</p>
+                        <p class="footer__text">We help to avoid screen time</p>
+                    </div>
                 </div>
-                <nav class="footer__column">
+                <nav class="footer__column footer__column_type_contact">
                     <h2 class="footer__column-heading">Email us</h2>
-                    <a class="footer__column-link" href="#">liltreasures@gmail.com</a>
+                    <form class="footer__form" name="form" novalidate>
+                        <fieldset class="footer__form-formset">
+                            <input class="footer__form-input" type="text" placeholder="Your name" required>
+                            <input class="footer__form-input" type="email" placeholder="your_email@mail.com" required>
+                            <textarea class="footer__form-textarea" placeholder="Your text"></textarea>
+                            <button aria-label="submit" class="button button_footer" type="button">Send</button>
+                        </fieldset>
+                    </form>
                 </nav>
-                <nav class="footer__column">
+                <nav class="footer__column footer__column_type_follow">
                     <h2 class="footer__column-heading">Follow us</h2>
-                    <ul class="footer__list">
-                        <li>
-                            <a class="footer__column-link" href="#">
-                                <img class="footer__social-icons" src="./images/fb.svg" alt="facebook icon">facebook
-                            </a>
-                        </li>
-                        <li>
-                            <a class="footer__column-link" href="#">
-                                <img class="footer__social-icons" src="./images/instagram.svg"
-                                    alt="instagram icon">instagram
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="footer__list">
+                        <a class="footer__column-link" href="#">
+                            <img class="footer__social-icons" src="./images/fb.svg" alt="facebook icon">facebook
+                        </a>
+                        <a class="footer__column-link" href="#">
+                            <img class="footer__social-icons" src="./images/instagram.svg"
+                                alt="instagram icon">instagram
+                        </a>
+                        <a href="#" class="footer__column-link footer__column-link_type_large">
+                            www.liltreasures.com
+                        </a>
+                    </div>
                 </nav>
+            </div>
+            <div class="footer__createdby">
+                <img src="./images/group-logo.png" alt="StudioInBox logo" class="logo_group">
             </div>
         </footer>
 
